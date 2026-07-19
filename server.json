@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/irail",
+  "title": "Irail",
+  "description": "iRail MCP — Belgian rail (SNCB/NMBS) real-time via the community iRail API",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/irail",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-irail",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/irail/mcp"
+    }
+  ]
+}
