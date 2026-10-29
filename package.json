@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-irail",
-  "version": "0.1.1",
-  "description": "iRail MCP — Belgian rail (SNCB/NMBS) real-time via the community iRail API",
+  "version": "0.2.0",
+  "description": "iRail MCP — Belgian rail (SNCB/NMBS) real-time via the community iRail API (https://api.irail.be, keyless, https://docs.irail.be)",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-irail": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "irail"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-irail.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/irail",
   "pipeworx": {
-    "sourceHash": "v1-3dc008217bdc271a2f5e59dcb923adc25893319e09cd9c0e45ffd3e545169960",
-    "sourceCommit": "70cd53748fc9f9a43ed3681d751bfa96e701efd2"
+    "mode": "gateway",
+    "slug": "irail",
+    "gatewaySlug": "irail",
+    "sourceHash": "v1-5e53e456afc42dc246cfa1976a525379cc9ade10b5eab2c3d9b41c47a24828a6",
+    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
   }
 }
