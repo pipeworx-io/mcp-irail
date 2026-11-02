@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-irail",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "iRail MCP — Belgian rail (SNCB/NMBS) real-time via the community iRail API (https://api.irail.be, keyless, https://docs.irail.be)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "irail",
     "gatewaySlug": "irail",
-    "sourceHash": "v1-5e53e456afc42dc246cfa1976a525379cc9ade10b5eab2c3d9b41c47a24828a6",
-    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
+    "sourceHash": "v1-10f09bc3d608e4fb714c99901e93919b30866f5a32bf46c6d82e4e3598260533",
+    "sourceCommit": "0ca9712c0ac03bb0121cc7e81b202d0c45ac02ca"
   }
 }
